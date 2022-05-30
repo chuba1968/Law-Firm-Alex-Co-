@@ -1,0 +1,7 @@
+{
+  "name": "law",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

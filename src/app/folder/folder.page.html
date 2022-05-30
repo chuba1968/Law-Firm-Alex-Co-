@@ -1,0 +1,132 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div class="headeardiv">
+ <div class="child">
+
+<ion-card>
+
+  <ion-item lines="none" color='primary-contrast'>
+   <ion-icon name="sunny-sharp"> </ion-icon> <p class="chamber"> Welcome to Hon Alex Amujiogu & Co</p> </ion-item>
+
+
+
+  <ion-card-subtitle>We are a full-service law practice dedicated to providing exceptional legal services to our clients.</ion-card-subtitle>
+
+
+  <ion-button (click)="whatsapp()">
+    <ion-icon slot="end" name="chatbubbles"></ion-icon>
+    Message
+  </ion-button>
+</ion-card>
+
+
+<div class="divide">
+
+  <div>
+    <img src="assets/—Pngtree—balance court judge justice law_4968804.png" alt="" srcset="">
+
+
+  </div>
+  <p>Justice to us means that you get what is yours, when due !</p>
+
+  <ion-item lines="none" color='primary-contrast' [routerLink]="['/pageone']" class="routes" (click)="more()">
+     <h5>More</h5><ion-icon name="chevron-forward" [routerLink]="['pageone']" class="routes"></ion-icon> </ion-item>
+
+</div>
+
+
+<div class="practiceitemlist">
+  <p >Practice Areas</p>
+  <ion-item>
+    <ion-label>
+      General Practice
+    </ion-label>
+    <ion-icon name="checkmark-circle" slot="end"></ion-icon>
+
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label>
+      Election Petitions
+    </ion-label>
+    <ion-icon name="checkmark-circle" slot="end"></ion-icon>
+
+  </ion-item>
+  <ion-item>
+    <ion-label>
+      Contract & Corporate Matters
+    </ion-label>
+    <ion-icon name="checkmark-circle" slot="end"></ion-icon>
+  </ion-item>
+  <ion-item>
+    <ion-label>
+      Oil & Gas Matters
+    </ion-label>
+    <ion-icon name="checkmark-circle" slot="end"></ion-icon>
+
+  </ion-item>
+
+  <ion-item (click)="showAlert()">
+    <ion-label (click)="showAlert()">
+    </ion-label>
+    More
+    <ion-icon name="chevron-forward" slot="end"></ion-icon>
+
+  </ion-item>
+
+
+
+</div>
+
+</div>
+
+
+  </div>
+
+
+
+  </ion-content>
+
+
+
+  <ion-toolbar >
+
+    <ion-tabs>
+      <ion-tab-bar slot="bottom" >
+        <ion-tab-button tab="schedule" [routerLink]="['/pageone']" class="routes"><ion-icon name="list-outline"></ion-icon>
+          <ion-label>More</ion-label>
+        </ion-tab-button>
+
+
+
+        <ion-tab-button tab="home" [routerLink]="['/']" class="routes">
+          <ion-icon name="home-outline"></ion-icon>
+          <ion-label>Home</ion-label>
+        </ion-tab-button>
+
+
+        <ion-tab-button tab="about" [routerLink]="['/call']" class="routes">
+          <ion-icon name="paper-plane-outline"></ion-icon>
+          <ion-label>Call</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button tab="about" (click)="sShare()">
+      <ion-icon name="share-social"></ion-icon>
+          <ion-label>Share</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+   </ion-toolbar>
+
+
+

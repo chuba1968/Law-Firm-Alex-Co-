@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Hon Alex &amp; Co Chambers</string>
+    <string name="title_activity_main">Hon Alex &amp; Co Chambers</string>
+    <string name="package_name">io.alex.starter</string>
+    <string name="custom_url_scheme">io.alex.starter</string>
+</resources>
